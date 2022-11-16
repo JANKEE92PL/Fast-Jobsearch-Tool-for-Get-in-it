@@ -2,9 +2,45 @@
   animation: rainbow 600ms !important;
   animation-iteration-count: infinite !important;
   background-color: #1edd88 !important;
+  border-radius: 16px;
+  text-align: center;
 }
 
-#fastPlugin span{
+#fastPlugin span {
+  animation: rainbow 600ms infinite alternate-reverse !important;
+}
+#reloadPage {
+  color: lightcoral;
+}
+
+.lds-dual-ring {
+  display: block;
+  margin: 1.5rem auto;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid lightcoral;
+  border-color: lightcoral transparent lightcoral transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* only for DEV */
+#dev {
   color: lightcoral;
 }
 @keyframes rainbow {

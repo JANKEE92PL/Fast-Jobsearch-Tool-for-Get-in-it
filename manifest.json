@@ -1,23 +1,19 @@
 {
   "manifest_version": 3,
   "name": "Get-in.it.de Fast Jobsearch Tool",
+  "description": "A nice little helper for Jobsearch extension.",
   "version": "1.0.0",
   "content_scripts": [
     {
-      "matches": [
-        "https://www.get-in-it.de/"
-      ],
-      "js": [
-        "script.js"
-      ],
-      "exclude_matches": [
-        "*://.google.com/*"
-      ],
-      "css": [
-        "styles.css"
-      ]
+      "matches": ["https://www.get-in-it.de/*"],
+      "js": ["script.js"],
+      "exclude_matches": ["*://.google.com/*"],
+      "css": ["styles.css"]
     }
   ],
+  "action": {
+    "default_icon": "icon16.png"
+  },
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
