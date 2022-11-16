@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Get-in.it.de Fast Jobsearch Tool",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.get-in-it.de/"
+      ],
+      "js": [
+        "script.js"
+      ],
+      "exclude_matches": [
+        "*://.google.com/*"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
